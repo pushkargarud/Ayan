@@ -11,7 +11,7 @@
  * under the terms set out in this paragraph. All notices and licenses
  * below are for informational purposes only.
  *
- * NUGET: END LICENSE TEXT */
+ * NUGET: END LICENSE TEXT */ 
 
 /**
 * bootstrap.js v3.0.0 by @fat and @mdo
