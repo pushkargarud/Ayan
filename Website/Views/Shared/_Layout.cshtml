@@ -15,12 +15,8 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/Site.css" rel="stylesheet">
     
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-    
     <!-- Custom styles for this template -->
     <link href="~/Content/Templates/carousel.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -72,9 +68,8 @@
         </a>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>">
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
 </body>
 </html>
