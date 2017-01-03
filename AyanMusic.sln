@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{7C95A7D2-2C8C-4B9C-839B-C37F1C73E613}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AyanMusic.Website", "WebApplication1\WebApplication1.csproj", "{7C95A7D2-2C8C-4B9C-839B-C37F1C73E613}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
