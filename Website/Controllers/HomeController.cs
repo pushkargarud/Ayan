@@ -1,43 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using AyanMusic.Website.Models;
 
 namespace AyanMusic.Website.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index() => View(new HomeViewModel
         {
-            ViewBag.Msg = "Hellow World";
-            return View();
-        }
+            PageTitle = "Hello World"
+        });
 
-        public ActionResult About()
+        public ActionResult About() => View(new AboutViewModel
         {
-            ViewBag.Message = "Your application description page.";
+            PageTitle = "Your application description page.",
+            Message = "This is my message"
+        });
 
-            return View();
-        }
-
-        public ActionResult Contact()
+        public ActionResult Contact() => View(new ContactViewModel
         {
-            ViewBag.Message = "Your contact page.";
+            PageTitle = "Your contact page.",
+            Message = "This is my message."
+        });
 
-            return View();
-        }
-
-        public ActionResult UnderConstruction()
+        public ActionResult UnderConstruction() => View(new UnderConstructionViewModel
         {
-            ViewBag.Message = "Your contact page.";
+            PageTitle = "Under construction"
+        });
 
-            return View();
-        }
-
-        public ActionResult Team()
+        public ActionResult Team() => View(new TeamViewModel
         {
-            return View();
-        }
+            PageTitle = "Team view page"
+        });
     }
 }
