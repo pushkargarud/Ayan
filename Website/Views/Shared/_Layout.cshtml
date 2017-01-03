@@ -1,5 +1,7 @@
-﻿<html lang="en">
+﻿@model BaseViewModel
+     
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="~/favicon.ico">
-    <title>Ayan Music</title>
+    <title>@Model.PageTitle</title>
     
     <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/Site.css" rel="stylesheet">
@@ -60,8 +62,6 @@
         </div>
     </div>
 
-    <!-- NAVBAR HEADER
-    ================================================== -->
     @RenderBody()
 
     <footer>
