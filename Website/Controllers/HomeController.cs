@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AyanMusic.Website.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -26,6 +27,19 @@ namespace AyanMusic.Website.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+        [HttpPost]
+        public ActionResult Contact(ContactModel contactModel)
+        {
+            if (SendMail(contactModel))
+            {
+                ViewBag.Mailsent = true;
+            }
+            return View();
+        }
+        public bool SendMail(ContactModel contactModel)
+        {
+            return true;
         }
 
         public ActionResult UnderConstruction()
