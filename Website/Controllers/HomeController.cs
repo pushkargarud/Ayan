@@ -29,7 +29,7 @@ namespace AyanMusic.Website.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Contact(ContactModel contactModel)
+        public ActionResult Contact(ContactViewModel contactModel)
         {
             if (SendMail(contactModel))
             {
@@ -37,7 +37,7 @@ namespace AyanMusic.Website.Controllers
             }
             return View();
         }
-        public bool SendMail(ContactModel contactModel)
+        public bool SendMail(ContactViewModel contactModel)
         {
             return true;
         }

@@ -59,6 +59,16 @@
                             {
                                 <script>alert("Mail Sent");</script>
                             }
+
+                            <button type="submit" id="pg" value="click me">Test <span class="glyphicon-book"></span></button>
+                            <script>
+                                jQuery(document).ready(function () {
+                                    jQuery('#pg').click(function () {
+                                        alert('test');
+                                    });
+
+                                });
+                            </script>
                         </div>
                     </div>
                 </fieldset>
